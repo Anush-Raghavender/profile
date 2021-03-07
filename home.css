@@ -16,6 +16,14 @@ body {
   background-size: cover;
 }
 
+#hamburger-menu {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1.75rem;
+  padding-top: 0.65rem;
+}
+
 .navbar {
   animation: 1s ease-out 0s 1 slideInFromTop;
 }
