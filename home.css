@@ -1,0 +1,725 @@
+html {
+  background-image: url("wallpaper.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+html, body {min-height: 100%;}
+
+body {
+  background: none;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-size: cover;
+}
+
+#hamburger-menu {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1.75rem;
+  padding-top: 0.65rem;
+}
+
+.navbar {
+  animation: 1s ease-out 0s 1 slideInFromTop;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.about-links {
+  color: #000000;
+}
+
+.about-links:hover {
+  text-decoration: underline;
+  color: #FFFFFF;
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-250%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.navbar-default {
+  background: transparent;
+}
+
+.navbar-brand {
+  font-family: Sacramento, cursive;
+  font-size: 3rem;
+  margin-left: 5rem;
+  margin-top: 1.5rem;
+  color: #000000;
+}
+
+.navbar-brand:hover {
+  color: #000000;
+}
+
+#navbarNav {
+  margin-top: 0.25rem;
+}
+
+.navbar-nav {
+  margin-right: 9.5rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  border-style: solid;
+  border-left: 1rem;
+  border-right: 1rem;
+  border-color: #000000;
+}
+
+.portfolio-padding {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.nav-link {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 0;
+
+}
+
+.nav-link:hover {
+  color: #FFFFFF;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.nav-link:focus {
+  color: #000000;
+  text-decoration: underline;
+}
+
+#anush-raghavender {
+  width: 25.75rem;
+  margin-left: 6.5rem;
+  margin-top: 3rem;
+  display: inline;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-400%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.content-box {
+  float: right;
+  text-align: center;
+  width: 35rem;
+  margin-right: 4.5rem;
+  margin-top: 4.5rem;
+  animation: 1s ease-out 0s 1 slideInFromRight;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(400%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.content {
+  color: #000000;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h1,h3 {
+  font-family: 'Merriweather', serif;
+  font-weight: 900;
+  margin-bottom: 0.10rem;
+}
+
+.social-media-nav-bar {
+  margin-bottom: 2.5rem;
+  text-align: center;
+  padding-left: 0;
+}
+
+.social-media-nav {
+  display: inline;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem
+}
+
+.social-media-btns {
+  width: 2.5rem;
+}
+
+.contact-me {
+  margin-right: 2rem;
+}
+
+.contact-me, .my-resume {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  background: #2C0115;
+  color: #FFFFFF;
+  border-width: 0.25rem;
+  border-style: solid;
+  border-color: #000000;
+  border-radius: 2.5rem;
+  padding-left: 1.7rem;
+  padding-right: 1.7rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  font-size: 1rem;
+  outline: none;
+  display: inline;
+}
+
+.contact-me:hover, .my-resume:hover {
+  background: transparent;
+  color: #000000;
+  cursor: pointer;
+  outline: none;
+}
+
+.contact-me:focus, .my-resume:focus {
+  outline: none;
+}
+
+.copyright {
+  font-family: Roboto, sans-serif;
+  color: #000000;
+  margin-top: 3rem;
+  margin-bottom: 0.25rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  animation: 1s ease-out 0s 1 slideInFromBottom;
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(250%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+p {
+  font-family: Roboto, sans-serif;
+  color: #000000;
+  font-size: 1.1rem;
+}
+
+#about {
+  text-align: center;
+  float: right;
+  width: 34rem;
+  color: #000000;
+  margin-right: 4.5rem;
+  margin-top: 3.5rem;
+  animation: 1s ease-out 0s 1 slideInFromRight;
+  display: none;
+}
+
+.carousel {
+  width: 35rem;
+  float: right;
+  margin-right: 4.6rem;
+  margin-top: 4.3rem;
+  animation: 1s ease-out 0s 1 slideInFromRight;
+  display: none;
+}
+
+#skills {
+  width: 26rem;
+  float: right;
+  margin-right: 8.75rem;
+  margin-top: 3rem;
+  animation: 1s ease-out 0s 1 slideInFromRight;
+  display: none;
+}
+
+.carousel-indicators {
+  top: 300px;
+}
+
+.carousel-control-prev {
+  left: -75px;
+}
+
+.carousel-control-next {
+  right: -75px;
+}
+
+.navbar-toggler {
+  display: block;
+}
+
+.navbar-toggler:focus {
+  outline:none;
+}
+
+
+
+/* Break-Point */
+
+
+@media (max-width: 1200px) {
+
+  body {
+    overflow-y: auto;
+  }
+  .fas {
+    margin-top: 0.5rem;
+  }
+  .navbar {
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .navbar-brand {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2.75rem;
+    text-align: center;
+  }
+  .navbar-nav {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .nav-link {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .portfolio-padding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #anush-raghavender {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 17rem;
+    margin-top: 0.5rem;
+    animation: 1s ease-out 0s 1 slideInFromRight;
+    margin-bottom: 2rem;
+  }
+  .content-box {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25rem;
+    margin-top: 1.25rem;
+    float: none;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+  }
+  .content {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.75rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .social-media-nav-bar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.25rem;
+    text-align: center;
+    padding-left: 0;
+  }
+  .social-media-nav {
+    display: inline;
+  }
+  .social-media-btns {
+    width: 1.8rem;
+  }
+  .contact-me, .my-resume {
+    border-width: 0.25rem;
+    border-style: solid;
+    border-color: #000000;
+    border-radius: 2.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 0.75rem;
+  }
+  .contact-me {
+    margin-right: 0.5rem;
+  }
+  .copyright {
+    font-size: 0.85rem;
+    margin-top: 2rem;
+    text-align: center;
+    animation: 1s ease-out 0s 1 slideInFromRight;
+  }
+  #about {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 35rem;
+    float: none;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: none;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+  }
+  .about-content-1 {
+    margin-top: 0.5rem;
+  }
+  .about-content-1, .about-content-2 {
+    font-size: 0.9rem;
+  }
+  .carousel {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: none;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+  }
+
+  #skills {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    width: 18rem;
+    display: none;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+  }
+  .carousel-indicators {
+    top: 215px;
+  }
+  .carousel-control-prev {
+    left: -45px;
+  }
+  .carousel-control-next {
+    right: -45px;
+  }
+}
+
+
+/* Tablet */
+@media (max-width: 992px) {
+  body {
+    overflow-y: auto;
+  }
+  .fas {
+    margin-top: -0.25rem;
+  }
+  .navbar {
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+  }
+  .navbar-brand {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2.75rem;
+  }
+  .navbar-nav {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .nav-link {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .portfolio-padding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #anush-raghavender {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 16rem;
+    margin-top: 0.25rem;
+    animation: 1s ease-out 0s 1 slideInFromRight;
+  }
+  .content-box {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25rem;
+    float: none;
+    margin-top: -16px;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+  }
+  .content {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.75rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+  h1 {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+  .social-media-nav-bar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .social-media-nav {
+    display: inline;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .social-media-btns {
+    width: 1.75rem;
+  }
+  .contact-me, .my-resume {
+    border-width: 0.25rem;
+    border-style: solid;
+    border-color: #000000;
+    border-radius: 2.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 0.75rem;
+  }
+  .contact-me {
+    margin-right: 0.5rem;
+  }
+  .copyright {
+    font-size: 0.85rem;
+    margin-top: 1.65rem;
+    margin-bottom: 0.25rem;
+    text-align: center;
+    animation: 1s ease-out 0s 1 slideInFromRight;
+  }
+  #about {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 35rem;
+    float: none;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: none;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+  }
+  .about-content-1 {
+    margin-top: 0.5rem;
+  }
+  .about-content-1, .about-content-2 {
+    font-size: 0.9rem;
+  }
+  .carousel {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: none;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+  }
+  #skills {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    width: 18rem;
+    display: none;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+  }
+  .carousel-indicators {
+    top: 215px;
+  }
+  .carousel-control-prev {
+    left: -55px;
+  }
+  .carousel-control-next {
+    right: -55px;
+  }
+}
+
+
+
+/* Mobile */
+@media (max-width: 767px) {
+  body {
+    overflow-y: auto;
+  }
+  .navbar-brand {
+    font-size: 2.25rem;
+  }
+  .fas {
+    margin-top: 0rem;
+  }
+  .navbar-toggler {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0rem;
+  }
+  #anush-raghavender {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15rem;
+    margin-top: 1rem;
+    animation: 1s ease-out 0s 1 slideInFromRight;
+  }
+  .content-box {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20rem;
+    margin-top: 1.5rem;
+    float: none;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+  }
+  .content {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5rem;
+  }
+  h3 {
+    font-size: 1rem;
+    text-align: center;
+  }
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .social-media-nav-bar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    margin-top: 1.25rem;
+  }
+  .social-media-nav {
+    display: inline;
+    padding-left: 0.35rem;
+    padding-right: 0.35rem;
+  }
+  .social-media-btns {
+    width: 1.6rem;
+  }
+  .contact-me, .my-resume {
+    border-width: 0.25rem;
+    border-style: solid;
+    border-color: #000000;
+    border-radius: 2.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 0.75rem;
+  }
+  .contact-me {
+    margin-right: 0.5rem;
+  }
+  .copyright {
+    font-size: 0.75rem;
+    margin-top: 3rem;
+    text-align: center;
+    animation: 1s ease-out 0s 1 slideInFromRight;
+  }
+  #about {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 18rem;
+    float: none;
+    margin-top: 2rem;
+    display: none;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+  }
+  .about-content-1 {
+    margin-top: 0.5rem;
+  }
+  .about-content-1, .about-content-2 {
+    font-size: 0.85rem;
+  }
+  .carousel {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 17rem;
+    margin-top: 2rem;
+    display: none;
+    margin-bottom: 3.5rem;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+  }
+  #skills {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15rem;
+    display: none;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+  }
+  .carousel-indicators {
+    top: 150px;
+  }
+  .carousel-control-prev {
+    left: -45px;
+  }
+  .carousel-control-next {
+    right: -45px;
+  }
+}
