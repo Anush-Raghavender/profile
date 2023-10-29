@@ -1,0 +1,65 @@
+#backgroundImage {
+  background: url("../resources/error.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+  width: 100vw;
+  height: 100vh;
+}
+
+#errorContentBox {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  height: 100vh;
+  width: 100vw;
+}
+
+#error {
+  font-family: "Roboto", sans-serif;
+  font-size: 4rem;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#message {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  margin-top: 1.25rem;
+  margin-bottom: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#goBackButton {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  background: transparent;
+  color: white;
+  padding: 0.75rem 2.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-width: 0.2rem;
+  border-style: solid;
+  border-color: white;
+  border-radius: 2.5rem;
+  outline: none;
+}
+
+#goBackButton:hover {
+  background: white;
+  color: black;
+  cursor: pointer;
+  outline: none;
+}
+
+#goBackButton:focus {
+  outline: none;
+}

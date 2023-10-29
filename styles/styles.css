@@ -1,0 +1,99 @@
+#backgroundImage {
+  background-image: url("../resources/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+  width: 100vw;
+  height: 100vh;
+}
+
+#landingContentBox {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  height: 100vh;
+  width: 100vw;
+}
+
+#name {
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  animation: 1s ease-out 0s 1 slideInFromTop;
+}
+
+#title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  margin-top: 1.25rem;
+  margin-bottom: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: 3s steps(100, end) 1s 1 normal both animatedText;
+}
+
+#learnMoreButton {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  background: transparent;
+  color: #fff700;
+  padding: 0.75rem 2.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-width: 0.2rem;
+  border-style: solid;
+  border-color: #fff700;
+  border-radius: 2.5rem;
+  outline: none;
+  animation: 1s ease-out 0s 1 slideInFromBottom;
+}
+
+#learnMoreButton:hover {
+  background: #2c0115;
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
+}
+
+#learnMoreButton:focus {
+  outline: none;
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-250%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes animatedText {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(250%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

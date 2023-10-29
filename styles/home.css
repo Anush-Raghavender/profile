@@ -1,0 +1,13 @@
+#backgroundImage {
+  background-image: url("../resources/wallpaper.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+  width: 100vw;
+  height: 100vh;
+}
+
+#homeContentBox {
+}
