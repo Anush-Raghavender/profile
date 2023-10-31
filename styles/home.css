@@ -1,6 +1,7 @@
 html,
 body {
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 h1 {
@@ -36,6 +37,13 @@ a {
   font-weight: 900;
   color: black;
   animation: 1s ease-out 0s 1 slideInFromRight;
+}
+
+#about {
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+  animation: 1s ease-out 0s 1 slideInFromRight;
+  display: none;
 }
 
 #footer {
@@ -127,6 +135,22 @@ a {
   outline: none;
 }
 
+.about-heading {
+  font-weight: 900;
+}
+
+.about-content {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+@media (max-width: 1200px) {
+  html,
+  body {
+    overflow-y: auto;
+  }
+}
+
 @media (max-width: 992px) {
   #anush-picture {
     width: 20rem;
@@ -140,6 +164,9 @@ a {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+@media (max-width: 768px) {
 }
 
 @media (max-width: 576px) {

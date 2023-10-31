@@ -1,5 +1,5 @@
 #backgroundImage {
-  background: url("../resources/error.gif");
+  background: url("../resources/error.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -23,6 +23,7 @@
   color: white;
   margin-left: auto;
   margin-right: auto;
+  animation: 1s ease-out 0s 1 slideInFromTop;
 }
 
 #message {
@@ -34,6 +35,9 @@
   margin-bottom: 2.5rem;
   margin-left: auto;
   margin-right: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: 3s steps(100, end) 1s 1 normal both animatedText;
 }
 
 #goBackButton {
@@ -51,15 +55,43 @@
   border-color: white;
   border-radius: 2.5rem;
   outline: none;
+  animation: 1s ease-out 0s 1 slideInFromBottom;
 }
-
 #goBackButton:hover {
   background: white;
   color: black;
   cursor: pointer;
   outline: none;
 }
-
 #goBackButton:focus {
   outline: none;
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-250%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes animatedText {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(250%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
