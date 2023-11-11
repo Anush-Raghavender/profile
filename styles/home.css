@@ -46,6 +46,11 @@ a {
   display: none;
 }
 
+#projects {
+  animation: 1s ease-out 0s 1 slideInFromRight;
+  display: none;
+}
+
 #footer {
   font-family: Roboto, sans-serif;
   color: #000000;
@@ -140,8 +145,15 @@ a {
 }
 
 .about-content {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 500;
+}
+
+.carousel-control-prev {
+  left: -75px;
+}
+.carousel-control-next {
+  right: -75px;
 }
 
 @media (max-width: 1200px) {
@@ -230,6 +242,13 @@ a {
   }
   .contact-me {
     margin-right: 0.5rem;
+  }
+
+  .carousel-control-prev {
+    left: -15px;
+  }
+  .carousel-control-next {
+    right: -15px;
   }
 }
 
