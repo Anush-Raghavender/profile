@@ -51,6 +51,11 @@ a {
   display: none;
 }
 
+#skills {
+  animation: 1s ease-out 0s 1 slideInFromRight;
+  display: none;
+}
+
 #footer {
   font-family: Roboto, sans-serif;
   color: #000000;
